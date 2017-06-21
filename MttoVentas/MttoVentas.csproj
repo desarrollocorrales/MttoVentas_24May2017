@@ -34,6 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FEncrypt">
+      <HintPath>lib\FEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.6.9.9\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +53,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\ConsultasMySQLDatos.cs" />
+    <Compile Include="Datos\ConsultasSSDatos.cs" />
+    <Compile Include="Datos\IConsultasMySQLDatos.cs" />
+    <Compile Include="Datos\IConsultasSSDatos.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUIs\frmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIs\frmAcceso.Designer.cs">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIs\frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIs\frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIs\frmFolios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIs\frmFolios.Designer.cs">
+      <DependentUpon>frmFolios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIs\frmRefolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIs\frmRefolio.Designer.cs">
+      <DependentUpon>frmRefolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Tablas.cs" />
+    <Compile Include="Modelos\ConexionMySQL.cs" />
+    <Compile Include="Modelos\ConexionSS.cs" />
+    <Compile Include="Modelos\Cuentas.cs" />
+    <Compile Include="Modelos\Estaciones.cs" />
+    <Compile Include="Modelos\Folios.cs" />
+    <Compile Include="Modelos\IConexionMySQL.cs" />
+    <Compile Include="Modelos\IConexionSS.cs" />
+    <Compile Include="Modelos\ManejoSql.cs" />
+    <Compile Include="Modelos\Turnos.cs" />
+    <Compile Include="Modelos\Utilerias.cs" />
+    <Compile Include="Negocio\ConsultasMySQLNegocio.cs" />
+    <Compile Include="Negocio\ConsultasSSNegocio.cs" />
+    <Compile Include="Negocio\IConsultasMySQLNegocio.cs" />
+    <Compile Include="Negocio\IConsultasSSNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIs\frmAcceso.resx">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIs\frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIs\frmFolios.resx">
+      <DependentUpon>frmFolios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIs\frmRefolio.resx">
+      <DependentUpon>frmRefolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +130,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MttoVentas.Modelos.Cuentas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,11 +144,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="GUIs\" />
     <Folder Include="Images\" />
-    <Folder Include="Modelos\" />
-    <Folder Include="Negocio\" />
     <Folder Include="Utilidades\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

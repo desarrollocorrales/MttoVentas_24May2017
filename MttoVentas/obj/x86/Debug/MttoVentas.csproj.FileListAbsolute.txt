@@ -1,0 +1,16 @@
+G:\Github\MttoVentas_24May2017\MttoVentas\bin\Debug\MttoVentas.exe.config
+G:\Github\MttoVentas_24May2017\MttoVentas\bin\Debug\MttoVentas.exe
+G:\Github\MttoVentas_24May2017\MttoVentas\bin\Debug\MttoVentas.pdb
+G:\Github\MttoVentas_24May2017\MttoVentas\bin\Debug\FEncrypt.dll
+G:\Github\MttoVentas_24May2017\MttoVentas\bin\Debug\MySql.Data.dll
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.FormPrincipal.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.GUIs.frmAcceso.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.GUIs.frmConfiguracion.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.GUIs.frmFolios.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.GUIs.frmRefolio.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.Properties.Resources.resources
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.csproj.GenerateResource.Cache
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.exe.licenses
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.exe
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.pdb
+G:\Github\MttoVentas_24May2017\MttoVentas\obj\x86\Debug\MttoVentas.csprojResolveAssemblyReference.cache
